@@ -1,0 +1,105 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/*@media screen and (min-width: 1516px){*/
+.nav{
+    background-color: gray;
+    position: relative;
+    height: 100px;
+    width: 100vw;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-bar{
+    background-color: rebeccapurple;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.nav-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.logo {
+    height: 32px;
+    width: 32px;
+    padding: 20%;
+    background-color: white;
+    border-radius: 50%;
+}
+.logo:hover {
+    background-color: rgba(240,240,240,255);
+}
+.nav-inicio{
+    padding: 1%;
+    width: auto;
+    margin: 0px;
+}
+.inicio{
+    padding: 0%;
+}
+.nav-hoy{
+    padding: 1%;
+    width: auto;
+    margin: 10px;
+}
+.nav-flecha{
+    height: 20px;
+    width: 20px;
+    margin-left: 5px;
+    border-radius: 50%;
+    padding: 0%;
+}
+.nav-crear{
+    display: flex;
+    align-items: center;
+    padding: 1%;
+    width: auto;
+    margin: 10px;
+}
+.a-crear{
+    display: flex;
+    padding: 0%;
+}
+p, a{
+    color: white;
+}
+.nav-busqueda{
+    display: flex;
+    align-items: center;
+    width: 60%;
+    padding: 5px;
+}
+.nav-busqueda > input {
+    width: 100%;
+    height: 50px;
+    border-radius: 30px;
+    margin: 10px;
+    padding: 0 30px;
+    border: 0;
+}
+.buscar{
+    background-color: rgba(233,233,233,255);
+    color: rgba(118,118,118,255);
+}
+.buscar:hover{
+    background-color: rgba(225,225,225,255);
+}
+.btn{
+    position: fixed;
+    top: 23px;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    color: rgba(118,118,118,255);
+    margin-left: 20px;
+}
+/*}*/
