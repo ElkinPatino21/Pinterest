@@ -6,10 +6,10 @@
 /*@media screen and (min-width: 1516px){*/
 .nav{
     background-color: white;
-    position:fixed;
+    position:sticky;
     height: 100px;
     width: 100vw;
-    padding: 8px 16px;
+    padding: 20px 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,6 +68,9 @@ p, a{
     font-family:Arial, Heletica, sans-serif;
     font-weight: 600;
 }
+.icon{
+    cursor: pointer;
+}
 .nav-busqueda{
     display: flex;
     align-items: center;
@@ -92,22 +95,23 @@ p, a{
 .btn{
     position: static;
     color: rgba(118,118,118,255);
-    padding: 5px;
+    padding: 0px;
     border-radius: 100px;
 }
 .icono:hover{
     background-color: rgba(225,225,225,255);
 }
 .lupa{
-    margin: auto;
     display: flex; 
     align-items: center;
     position: relative;
+    margin: 0;
 }
 .iconl{
     position: absolute;
     left: 10px;
     color: rgba(118,118,118,255);
+    cursor: pointer;
 
 }
 .nav-noti{
@@ -148,21 +152,18 @@ p, a{
     height: 100%;
     border: 2px solid black;
     display: grid;
-    gap: 5px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
 }
 .item{
-    margin: 10px;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-right: 10px;
 }
 .border{
     border-radius: 30px;
     width: 100%;
     height: 100%;
-}
-.border:hover{
-    background: aqua;
-    color: aqua;
 }
 .i1{
     grid-column: 1/span 1;
@@ -178,31 +179,120 @@ p, a{
 }
 .i4{
     grid-column: 1/span 1;
-    grid-row: 3/4;
+    grid-row: 3/5;
 }
 .i5{
-    grid-column: 1/span 1;
+    grid-column: 2/3;
+    grid-row: 3/5;
+    
+}
+.i6{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.i7{
+    grid-column: 3/4;
+    grid-row: 2/4;
+}
+.i8{
+    grid-column: 3/4;
+    grid-row: 4/5;
+}
+.i9{
+    grid-column: 4/5;
+    grid-row: 1/3;
+}
+.i10{
+    grid-column: 4/5;
+    grid-row: 3/4;
+}
+.i11{
+    grid-column: 4/5;
     grid-row: 4/5;
 }
 .contenedor{
+    width: 100%;
+    height: 48vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor2{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor .figure{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.contenedor .figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 100ms ease-out;
+}
+.contenedor .figure .capa{
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    transition: all 100ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+.contenedor .figure:hover > .capa {
+    opacity: 1;
+    visibility: visible;
+}
+.marcas{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.marcas .grupoMarcas{
     position: relative;
     width: 100%;
     height: 100%;
 }
-.contenedor div{
+.guardar{
     position: absolute;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
+    width: 100px;
+    height: 60px;
+    top: 10px;
+    right: 20px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
 }
-.caja{
-    background: url(./images/piedra.jpg);
-    background-size: 100% 100%;
+.marcas .grupoMarcas div{
+    width: 35px;
+    height: 35px;
 }
-.border{
-    background-size: 100% 100%;
+
+.marcas .grupoMarcas > .fin2{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
 }
-.caja:hover{
-    background-color: black;
+.marcas .grupoMarcas > .fin3{
+    position: absolute;
+    bottom: 10px;
+    right: 60px;
+}
+.txt_guardar{
+    color: white;
 }
 /*}*/
