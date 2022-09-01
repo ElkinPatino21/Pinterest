@@ -65,7 +65,7 @@
 p, a{
     color: black;
     text-decoration:solid;
-    font-family:Arial, Heletica, sans-serif;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 500;
 }
 .icon{
@@ -368,7 +368,7 @@ p, a{
 p, a{
     color: black;
     text-decoration:solid;
-    font-family:Arial, Heletica, sans-serif;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 500;
 }
 .icon{
@@ -673,7 +673,7 @@ p, a{
     p, a{
         color: black;
         text-decoration:solid;
-        font-family:Arial, Heletica, sans-serif;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-weight: 500;
     }
     .icon{
